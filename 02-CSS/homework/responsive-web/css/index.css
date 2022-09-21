@@ -191,6 +191,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .intro img {
+  border-radius: 20px;
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -232,6 +235,14 @@ footer {
 }
 .home .actual .actual-text p {
   margin-bottom: 26px;
+}
+.home .actual .actual-text .btn {
+  background-color: #22283A;
+  color: #F6F6F6;
+  display: inline-flex;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
 }
 .home .actual .actual-img {
   width: 46%;
