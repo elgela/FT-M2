@@ -14,3 +14,4 @@ export default function Card({max, min, name, img, onClose}) {
     </div>
   )
 };
+
