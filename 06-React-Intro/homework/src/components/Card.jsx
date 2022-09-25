@@ -4,7 +4,7 @@ export default function Card({max, min, name, img, onClose}) {
   // acá va tu código
   return (
     <div>
-      <div onClick={onClose}>x</div>
+      <button onClick={onClose}>x</button>
       <h3>{name}</h3>
       <h5>Min</h5>
       <div>{min}</div>
