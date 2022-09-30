@@ -20,17 +20,17 @@
         this.state = {
           contador: this.props.numero
         }
-        // this.onButtonClick = this.onButtonClick.bind(this);
+        this.onButtonClick = this.onButtonClick.bind(this); //Bindeo el this!
       }
 
-      // onButtonClick(){
-      //   console.log('this', this);
-      //   this.setState({
-      //     contador: this.state.contador + 1,
-      //   });
-      // }
+      onButtonClick(){ //Si uso funciones comunes tengo que bindear
+        console.log('this', this);
+        this.setState({
+          contador: this.state.contador + 1,
+        });
+      }
 
-      onButtonClick = () => {
+      onButtonClick = () => { //el this se bindea automáticamente y en este caso no necesito usar el método bind
         console.log('this arrow', this)
         this.setState({
           contador: this.state.contador + 1
