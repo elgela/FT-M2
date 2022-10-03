@@ -8,7 +8,7 @@ function Nav({onSearch}) {
     <nav className="navbar navbar-dark bg-dark">
       <img src={Logo} alt='Logo Henry'/>
       Henry - Weather App
-      <SearchBar/>
+      <SearchBar onSearch={onSearch}/>
     </nav>
   );
 };

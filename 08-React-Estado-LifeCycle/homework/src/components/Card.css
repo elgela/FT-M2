@@ -1,20 +1,22 @@
 .card {
-  margin: 20px;
-  width: 18rem;
+  width: 300px;
+  height: 275px;
+  border: 1px solid rgb(229, 228, 228);
+  border-radius: 5px;
 }
 
-.card-title {
-  margin-bottom: 15px;
-}
-
-#closeIcon {
+.title {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 8px;
-  margin-top: 8px;
+  flex-direction: row-reverse;
+  justify-content: center;
 }
 
-.card-body {
-  margin-top: 0px !important;
-  padding-top: 0px !important;
+.btn {
+  background-color: rgb(184, 91, 91);
+  border-radius: 5px;
+  color: antiquewhite;
+}
+
+.h6 {
+  display: inline-table;
 }

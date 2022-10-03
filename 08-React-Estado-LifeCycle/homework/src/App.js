@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
-import Nav from './components/Nav';
+import Nav from './components/Nav.jsx';
+import Cards from './components/Cards.jsx';
+
 
 export default function App() {
   return (
