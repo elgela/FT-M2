@@ -34,10 +34,14 @@ export default function App() {
     })
   }
   
+function onClose(id) {
+  setCities(previousState => previousState.filter(city => city.id !== id))
+}
+
   return (
     <div className="App">
       <Nav onSearch={onSearch}/>
-      <Cards cities={cities}/>
+      <Cards cities={cities} onClose={onClose}/>
     </div>
   );
 }
