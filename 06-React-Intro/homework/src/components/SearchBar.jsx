@@ -7,7 +7,7 @@ import React from "react";
 //   return ( 
 //     <div>
 //       <input placeHolder='Ciudad...'/>
-//       <button onClick={onSearch}>Agregar</button>
+//       <button onClick={() => onSearch('Agregando ciudad...')}>Agregar</button>
 //     </div>
 //   )
 // };
@@ -17,8 +17,8 @@ export default class SearchBar extends React.Component {
   render() {
     return (
       <div>
-        <input placeHolder='Ciudad...'/>
-        <button onClick={this.props.onSearch}>Agregar</button>
+        <input className='input' placeHolder='Ciudad...'/>
+        <button className='search' onClick={this.props.onSearch}>Agregar</button>
       </div>
     )
   }

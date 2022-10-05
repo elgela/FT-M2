@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.search {
+  border-color: rgb(4, 223, 74);
+}
+
+.input {
+  border-color: rgb(32, 42, 15);
+}

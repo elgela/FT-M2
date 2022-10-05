@@ -2,7 +2,7 @@ import React from 'react';
 // import { Cairns } from '../data';
 import Card from './Card';
 
-export default function Cards({cities}) {
+export default function Cards({cities}) { //entre llaves es destructuring
   // acá va tu código
   // tip, podés usar un map
   return (
@@ -13,7 +13,7 @@ export default function Cards({cities}) {
       min={ciudad.main.temp_min}
       name={ciudad.name}
       img={ciudad.weather[0].icon}
-      onClose={() => alert(ciudad.name)}
+      onClose={() => alert(ciudad.name)} //o lo que se quiera que se muestre en el alert
       />
     )
   )

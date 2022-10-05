@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Card({max, min, name, img, onClose}) {
+export default function Card({max, min, name, img, onClose}) { //si se pone props como argumento después hay que poner props.name por ejemplo, o props.min, o el nombre de esa variable 
   // acá va tu código
   return (
     <div>
