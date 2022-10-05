@@ -5,6 +5,10 @@
   border-radius: 5px;
 }
 
+.card-title {
+  color: rgb(139, 74, 0);
+}
+
 .title {
   display: flex;
   flex-direction: row-reverse;
