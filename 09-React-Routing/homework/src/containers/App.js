@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-
+import { Route } from 'react-router-dom';
 import './App.css';
 import Nav from '../components/Nav.jsx';
 import Cards from '../components/Cards.jsx';
+import About from '../components/About.jsx';
 
 const apiKey = '4ae2636d8dfbdc3044bede63951a019b';
 
@@ -53,6 +54,8 @@ function App() {
           onClose={onClose}
         />
       </div>
+
+      <Route path='/about' component={About} />
       <hr />
     </div>
   );
