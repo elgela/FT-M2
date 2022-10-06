@@ -42,45 +42,59 @@ const Root = (
   <Router>
     <NavBar />
     <Switch>
+      
       <Route path="/home">
         <Home />
       </Route>
+      
+      <Route path="/exact/another">
+        <h2>Another</h2>
+      </Route>
+
       <Route exact path="/exact">
         <h2>Exact</h2>
       </Route>
-      {/* <Route path="/exact/another">
-        <h2>Another</h2>
-      </Route> */}
+      
       <Route path="/exact">
         <h2>Not Exact</h2>
       </Route>
-      {/* <Route path="/nostrict/">
+
+      <Route path="/nostrict/">
         <h2>Not Strict</h2>
-      </Route> */}
+      </Route>
+      
       <Route path="/nostrict">
         <h2>Not Strict</h2>
       </Route>
+      
       <Route strict path="/strict/">
         <h2>Strict</h2>
       </Route>
-      {/* <Route strict path="/strict">
+
+      <Route strict path="/strict">
         <h2>Strict</h2>
-      </Route> */}
-      {/* <Route exact strict path="/strict">
+      </Route>
+      
+      <Route exact strict path="/strict">
         <h2>Strict</h2>
-      </Route> */}
-      {/* <Route sensitive path="/sensitive">
+      </Route>
+
+      <Route sensitive path="/sensitive">
         <h2>Sensitive</h2>
       </Route>
+      
       <Route sensitive path="/Sensitive">
         <h2>Sensitive Mayus</h2>
-      </Route> */}
+      </Route>
+
       <Route path="/sensitive">
         <h2>No Sensitive</h2>
       </Route>
+
       <Route path="/">
         <h2>Default</h2>
       </Route>
+
     </Switch>
   </Router>
 );
