@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
-import { Route } from 'react-router-dom';
+
 import './App.css';
 import Nav from '../components/Nav.jsx';
 import Cards from '../components/Cards.jsx';
-import About from '../components/About.jsx';
+import About from '../components/About';
+import Ciudad from '../components/Ciudad';
+
+import { Route, Switch } from 'react-router-dom';
 
 const apiKey = '4ae2636d8dfbdc3044bede63951a019b';
 
@@ -48,14 +51,20 @@ function App() {
   return (
     <div className="App">
       <Nav onSearch={onSearch}/>
-      <div>
+      <Switch>
+        <Route path='/'>
         <Cards
           cities={cities}
           onClose={onClose}
-        />
-      </div>
-
-      <Route path='/about' component={About} />
+        />          
+        </Route>
+        <Route path='/about'>
+          <About />
+        </Route>
+        <Route path='/ciudad/:id'>
+          <Ciudad />
+        </Route>
+      </Switch>
       <hr />
     </div>
   );
