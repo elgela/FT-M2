@@ -52,7 +52,7 @@ function App() {
     <div className="App">
       <Nav onSearch={onSearch}/>
       <Switch>
-        <Route path='/'>
+        <Route exact path='/'>
         <Cards
           cities={cities}
           onClose={onClose}
