@@ -3,6 +3,7 @@ import React from 'react';
 export default function  Form() {
   const [username, setUsername] = React.useState('')
   const [password, setPassword] = React.useState('')
+  
   return (
     <form>
       <div>
@@ -13,6 +14,8 @@ export default function  Form() {
         <label>Password:</label>
         <input type='text' name='password' value={password} onChange={(e) => setPassword(e.target.value)} valor={password}/>
       </div>
+      <button>
+        <input type='button' value='Submit' onClick=''/></button>
     </form>
   )
 }
