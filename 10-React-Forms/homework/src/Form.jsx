@@ -18,15 +18,15 @@ export function validate(input) {
 };
 
 
-export default function  Form() {
+export default function Form() {
   const [input, setInput] = useState({
     username: '',
     password: '',
   })
-
+  
   const [errors, setErrors] = useState({})
   
-
+  
   function handleInputChange(e) {
     setInput({
       ...input,
@@ -43,11 +43,17 @@ export default function  Form() {
     <form>
       <div>
         <label>Username:</label>
-        <input type='text' name='username' value={input.username} onChange={handleInputChange}/>
+        <input className={errors.username && 'danger'} type='text' name='username' value={input.username} onChange={handleInputChange}/>
+        {errors.username && (
+        <p className='danger'>{errors.username}</p>
+        )}
       </div>
       <div>
         <label>Password:</label>
-        <input type='password' name='password' value={input.password} onChange={handleInputChange}/>
+        <input className={errors.password && 'danger'} type='password' name='password' value={input.password} onChange={handleInputChange}/>
+        {errors.password && (
+        <p className='danger'>{errors.password}</p>
+        )}
       </div>
       <button>
         <input type='button' value='Submit' onClick=''/>
